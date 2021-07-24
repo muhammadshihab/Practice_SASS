@@ -1,0 +1,53 @@
+@import "mixin";
+@import "var";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20.5%;
+}
+
+.main_header{
+    @include flex;
+    width: 100vw;
+    height: 100vw;
+    background: $bg-color;
+
+    h1{
+        color: rgb(0, 0, 0);
+        font-size: 10rem + 5rem;
+
+        &:hover{
+            color: rgb(6, 8, 136);
+            cursor: pointer;
+        }
+
+    }
+   
+    p{
+        color: rgb(0, 0, 0);
+        font-size:   8rem;
+        letter-spacing: 3.5px;
+
+        &:hover{
+            color: rgb(6, 8, 136);
+            cursor: pointer;
+        }
+
+        &::before{
+            content: 'Is ';
+        }
+    }
+}
+
+// 1. operators
+// 2. variables
+// 3. nesting
+// 4. mixin
+// 5. parameters
+// 6. partials
+
